@@ -4,11 +4,14 @@
   background-image: url('../../images/pawel-czerwinski-lWBZ01XRRoI-unsplash.jpg');
   background-size: cover;
   background-position: center;
+  
   height: 100vh;
 
   &-text {
     margin-left: 8rem;
     margin-top: 7%;
+    width: fit-content;
+    text-align: left;
   }
 
   &-text-1 {
@@ -25,5 +28,19 @@
     letter-spacing: .15rem;
     font-weight: 500;
     color: darken($color-light, 30%);
+  }
+
+  &-btn {
+    background-color: transparent;
+    border: 1px solid $color-green-light;
+    color: $color-green-light;
+    font-family: inherit;
+    margin-top: 5%;
+    margin-left: 1.5rem;
+    padding: 3%;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
