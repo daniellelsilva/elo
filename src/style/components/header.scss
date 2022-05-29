@@ -1,1 +1,19 @@
 @import '../main.scss';
+
+.header {
+  background-color: transparent;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+
+  &-nav {
+    width: 20%;
+  }
+
+  &-nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+}

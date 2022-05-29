@@ -5,7 +5,6 @@ import Elo from './page/Elo';
 function App() {
   return (
     <>
-      <Header />
       <Elo />
     </>
   );

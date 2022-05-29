@@ -1,1 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import './style//abstracts/variables.scss';
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px/16px = 62.5% */
+}
+
+body {
+  font-family: $font-primary;
+  // color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+}

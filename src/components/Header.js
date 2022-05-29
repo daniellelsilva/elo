@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+
+import '../style/components/header.scss';
 
 export default function Header() {
   return (
-    <header>
-      <div className="header-logo">LOGO</div>
+    <header className="header">
+      <div className="header-logo">Elo</div>
       <div className="header-nav">
         <ul className="header-nav-list">
           <li className="header-nav-item">Home</li>

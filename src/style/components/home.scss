@@ -1,1 +1,29 @@
 @import '../main.scss';
+
+.home {
+  background-image: url('../../images/pawel-czerwinski-lWBZ01XRRoI-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  &-text {
+    margin-left: 8rem;
+    margin-top: 7%;
+  }
+
+  &-text-1 {
+    font-size: 15rem;
+    font-weight: 200;
+    letter-spacing: 2rem;
+    color: $color-green;
+  }
+
+  &-text-2 {
+    margin-top: -4rem;
+    margin-left: 1.5rem;
+    font-size: 1.9rem;
+    letter-spacing: .15rem;
+    font-weight: 500;
+    color: darken($color-light, 50%);
+  }
+}
