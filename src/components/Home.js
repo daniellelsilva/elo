@@ -11,7 +11,7 @@ export default function Home() {
         <p className='home-text-1'>Elo</p>
         <p className='home-text-2'>a new way to be green</p>
         <button type='button' className='home-btn'>
-          See more &rarr;
+          Learn more
         </button>
       </div>
     </div>

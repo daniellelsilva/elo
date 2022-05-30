@@ -1,19 +1,29 @@
-import React from 'react';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-import '../style/components/header.scss';
+import "../style/components/header.scss";
 
 export default function Header() {
   return (
     <header className="header">
       <div className="header-logo">Elo</div>
       <div className="header-nav">
-        <ul className="header-nav-list">
-          <li className="header-nav-item">Home</li>
-          <li className="header-nav-item">About</li>
-          <li className="header-nav-item">Projects</li>
-          <li className="header-nav-item">Contact</li>
-        </ul>
+        <NavLink className="header-nav-item" exact to="/" activeClassName="selected">
+          Home
+        </NavLink>
+
+        <NavLink className="header-nav-item" to="/about" activeClassName="selected">
+          About
+        </NavLink>
+
+        <NavLink className="header-nav-item" to="/projects" activeClassName="selected">
+          Projects
+        </NavLink>
+
+        <NavLink className="header-nav-item" to="/contact" activeClassName="selected">
+          Contact
+        </NavLink>
       </div>
     </header>
-  )
+  );
 }

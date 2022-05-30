@@ -9,9 +9,13 @@
 
   &-text {
     margin-left: 8rem;
-    margin-top: 7%;
-    width: fit-content;
+    // margin-top: 5%;
+    padding-top: 12%;
     text-align: left;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
   }
 
   &-text-1 {
@@ -32,12 +36,28 @@
 
   &-btn {
     background-color: transparent;
-    border: 1px solid $color-green-light;
-    color: $color-green-light;
+    border: none;
+    color: $color-green;
     font-family: inherit;
-    margin-top: 5%;
-    margin-left: 1.5rem;
-    padding: 3%;
+    font-size: 1.1rem;
+    margin: 15% 11% 0 0;
+    align-self: flex-end;
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      display: block;
+      transition: all .8s ease;
+      transform: scaleX(0);
+      transform-origin: bottom left;
+    }
+
+    &:hover::after {
+      background-color: $color-green;
+      z-index: 11;
+      transform: scaleX(1);
+    }
 
     &:hover {
       cursor: pointer;

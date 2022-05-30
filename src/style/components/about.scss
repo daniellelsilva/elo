@@ -1,1 +1,65 @@
 @import '../main.scss';
+
+.about {
+  background-attachment: fixed;
+
+  &-company {
+    background-image: url('../../images/okeykat-tgxqpsVG-0A-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 8%;
+
+    & p {
+      color: lighten($color-dark, 6%);
+      font-size: 1.8rem;
+      line-height: 1.8;
+      margin-top: 5%;
+    }
+  }
+
+  &-mission {
+    background-color: $color-light;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+
+    & h1 {
+      color: $color-green;
+    }
+
+    &-cards {
+      margin-top: 5%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 6rem;
+      align-items: start;
+    }
+
+    &-card {
+
+      & h2 {
+        font-weight: 300;
+      }
+    }
+  }
+
+  &-team {
+
+  }
+
+  &-text {
+    background-color: rgba(51, 51, 51, .15);
+    box-shadow: 3px 2px 5px rgba(17, 17, 17, .55);
+    backdrop-filter: blur(8px);
+    padding: 5%;
+    width: 60%;
+  }
+
+}

@@ -6,23 +6,21 @@
   font-size: 1.2rem;
   justify-content: space-between;
   padding: 2rem 8rem;
+  position: fixed;
+  width: 100%;
 
   &-nav {
-    width: 30%;
-  }
-
-  &-nav-list {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    width: 30%;
   }
 
   &-nav-item {
+    color: $color-dark;
     padding: .5rem 1rem;
     transition: all .5s;
-
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-light 50%);
-    background-size: 230%;
+    text-decoration: none;
 
     &::after {
       content: "";
@@ -44,4 +42,9 @@
       cursor: pointer;
     }
   }
+}
+
+.selected {
+  background-color: aqua !important;
+  color: red !important;
 }
