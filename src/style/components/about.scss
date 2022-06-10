@@ -24,29 +24,75 @@
     background-color: $color-light;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 115vh;
 
     display: flex;
     flex-direction: column;
     padding: 8%;
+
+    &-title {
+      display: flex;
+      margin-bottom: 8%;
+    }
 
     & h1 {
       color: $color-green;
     }
 
     &-cards {
-      margin-top: 5%;
+      margin-top: 3%;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-template-rows: repeat(2, 60%);
       grid-gap: 6rem;
       align-items: start;
     }
 
     &-card {
-
+      background-size: cover;
+      background-position: center;
+      box-shadow: 3px 2px 5px rgba(58, 57, 57, 0.3);
+      backdrop-filter: blur(8px);
+      border-radius: 3px;
+      color: $color-light-3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 8%;
       & h2 {
         font-weight: 300;
+        margin-bottom: 5%;
       }
+
+      &-1 {
+        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/solar.jpg');
+      }
+
+      &-2 {
+        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/windEnergy.jpg');
+      }
+
+      &-3 {
+        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/lowCarbon.jpg');
+      }
+
+      &-4 {
+        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/recycle.jpg');
+      }
+
+      &-5 {
+        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/sanitation.jpg');
+      }
+
+      &-6 {
+        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/sustentability.jpg');
+      }
+
+    }
+
+    &-icon {
+      font-size: 2rem;
     }
   }
 
@@ -56,8 +102,9 @@
 
   &-text {
     background-color: rgba(51, 51, 51, .15);
-    box-shadow: 3px 2px 5px rgba(17, 17, 17, .55);
+    box-shadow: 3px 2px 5px rgba(58, 57, 57, 0.3);
     backdrop-filter: blur(8px);
+    border-radius: 3px;
     padding: 5%;
     width: 60%;
   }
