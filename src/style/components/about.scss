@@ -43,7 +43,7 @@
       margin-top: 3%;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-      grid-template-rows: repeat(2, 60%);
+      grid-template-rows: repeat(2, 55%);
       grid-gap: 6rem;
       align-items: start;
     }
@@ -56,37 +56,52 @@
       border-radius: 3px;
       color: $color-light-3;
       display: flex;
+      filter: grayscale(100%);
       flex-direction: column;
       justify-content: center;
       height: 100%;
       padding: 8%;
+      transition: all .5s;
+
+      &:hover {
+        filter: none;
+        cursor: pointer;
+        transform: translateY(-2px);
+      }
+
       & h2 {
         font-weight: 300;
-        margin-bottom: 5%;
+        font-size: 2rem;
+        margin-bottom: 3%;
+      }
+
+      & p {
+        font-size: 1.15rem;
+        font-weight: 400;
       }
 
       &-1 {
-        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/solar.jpg');
+        background-image: linear-gradient(rgba(58, 57, 57, 0.4), rgba(58, 57, 57, 0.4)), url('../../images/solar.jpg');
       }
 
       &-2 {
-        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/windEnergy.jpg');
+        background-image: linear-gradient(rgba(58, 57, 57, 0.4), rgba(58, 57, 57, 0.4)), url('../../images/windEnergy.jpg');
       }
 
       &-3 {
-        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/lowCarbon.jpg');
+        background-image: linear-gradient(rgba(58, 57, 57, 0.4), rgba(58, 57, 57, 0.4)), url('../../images/lowCarbon.jpg');
       }
 
       &-4 {
-        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/recycle.jpg');
+        background-image: linear-gradient(rgba(58, 57, 57, 0.4), rgba(58, 57, 57, 0.4)), url('../../images/recycle.jpg');
       }
 
       &-5 {
-        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/sanitation.jpg');
+        background-image: linear-gradient(rgba(58, 57, 57, 0.4), rgba(58, 57, 57, 0.4)), url('../../images/sanitation.jpg');
       }
 
       &-6 {
-        background-image: linear-gradient(rgba(58, 57, 57, 0.9), rgba(58, 57, 57, 0.9)), url('../../images/sustentability.jpg');
+        background-image: linear-gradient(rgba(58, 57, 57, 0.4), rgba(58, 57, 57, 0.4)), url('../../images/sustentability.jpg');
       }
 
     }
