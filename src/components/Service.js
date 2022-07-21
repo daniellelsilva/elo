@@ -5,9 +5,9 @@ import '../style/components/services.scss';
 
 export default function Services() {
   return (
-    <div className='services'>
+    <div className='service-page'>
       <Header />
-      <div className='services services-mission'>
+      <div className='services'>
         <h1 className='heading-1'>Our mission</h1>
         <p>Helping you to be green</p>
         <div className='services-cards'>
