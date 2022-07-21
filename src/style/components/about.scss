@@ -54,19 +54,31 @@
       box-shadow: 3px 2px 5px rgba(58, 57, 57, 0.3);
       backdrop-filter: blur(8px);
       border-radius: 3px;
-      color: $color-light-3;
       display: flex;
-      filter: grayscale(100%);
+      // filter: grayscale(100%);
+      filter: brightness(0.4);
+      color: $color-light-3;
       flex-direction: column;
       justify-content: center;
       height: 100%;
       padding: 8%;
-      transition: all .5s;
+      transition: all .6s;
+
+      & h2, & p {
+        visibility: hidden;
+        transition: all .6s;
+
+      }
 
       &:hover {
         filter: none;
         cursor: pointer;
         transform: translateY(-2px);
+     
+        & h2, & p {
+          visibility: visible;
+          transform: translateY(-2px);
+        }
       }
 
       & h2 {
@@ -105,14 +117,20 @@
       }
 
     }
-
-    &-icon {
-      font-size: 2rem;
-    }
   }
 
   &-team {
+    background-image: url('../../images/milad-fakurian-WRnuGh8rPm0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    padding: 8%;
 
+    & h1 {
+      color: $color-green;
+    }
   }
 
   &-text {

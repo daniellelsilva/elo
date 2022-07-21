@@ -16,6 +16,10 @@ export default function Header() {
           About
         </NavLink>
 
+        <NavLink className="header-nav-item" to="/services" activeClassName="selected">
+          Services
+        </NavLink>
+
         <NavLink className="header-nav-item" to="/projects" activeClassName="selected">
           Projects
         </NavLink>
