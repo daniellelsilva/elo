@@ -8,7 +8,7 @@ export default function Services() {
     <div className='service-page'>
       <Header />
       <div className='services'>
-        <h1 className='heading-1'>Our mission</h1>
+        <h1 className='heading-1'>Services</h1>
         <p>Helping you to be green</p>
         <div className='services-cards'>
           <div className='services-card services-card-1'>
